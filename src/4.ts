@@ -17,13 +17,11 @@ class Person {
 }
 
 abstract class House {
-    public  door: boolean;
+    public  door: boolean= false;
     public tenants: Person[] = [];
     
 
-    constructor(public key: Key) {
-        this.door = false;
-    }
+    constructor(public key: Key)  {}
 
     comeIn(person: Person) : void {
         if (this.door) {
